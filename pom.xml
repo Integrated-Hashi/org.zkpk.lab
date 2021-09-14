@@ -7,6 +7,7 @@
     <properties>
         <scala.version>2.11.11</scala.version>
         <spark.version>2.1.1</spark.version>
+        <hadoop.version>2.7.3</hadoop.version>
     </properties>
 
     <repositories>
@@ -40,6 +41,21 @@
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-sql_2.11</artifactId>
             <version>${spark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming_2.11</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>${hadoop.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-hdfs</artifactId>
+            <version>${hadoop.version}</version>
         </dependency>
     </dependencies>
 
